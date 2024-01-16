@@ -1,0 +1,6 @@
+services:
+  web:
+    environment:
+      - DEBUG=False
+    ports:
+      - 8000:8000
