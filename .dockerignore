@@ -1,0 +1,5 @@
+.git/
+*.sqlite3
+.env.sample
+**/node_modules
+docker-compose.*.sample.yml
