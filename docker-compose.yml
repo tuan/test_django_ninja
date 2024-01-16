@@ -1,0 +1,16 @@
+services:
+  web:
+    container_name: web
+    restart: unless-stopped
+    env_file:
+      - .env
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - web
+    volumes:
+      - ./logs:/code/logs
+
+networks:
+  web:
