@@ -1,1 +1,8 @@
 @import "@picocss/pico/scss/pico";
+
+body {
+  min-height: 100vh;
+  background-color: cornsilk;
+  display: grid;
+  grid-template-columns: 1fr;
+}
