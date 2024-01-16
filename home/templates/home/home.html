@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load django_vite %}
+
+{% block head_extra %}
+  {% vite_hmr_client %}
+  {% vite_react_refresh %}
+  {% vite_asset 'src/main.tsx' %}
+{% endblock head_extra %}
+
+{% block content %}
+  <div id="app"></div>
+{% endblock content %}
